@@ -4,3 +4,12 @@ join Player
 on Team.id = Player.team_id
 
 #returns the player id with their team name
+
+select *
+from Parent
+join Player_Parent
+on Parent.id = Player_Parent.parent_id
+join Player
+on Player_Parent.player_id = Player.id
+
+#returns players with who their parent is
