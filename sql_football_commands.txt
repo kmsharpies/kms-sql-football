@@ -1,0 +1,38 @@
+CREATE TABLE Team(
+    id integer PRIMARY KEY AUTOINCREMENT,
+    age_group_id INT,
+        FOREIGN KEY (age_group_id) REFERENCES Age_Group(id)
+);
+CREATE TABLE Coach_Team(
+    id integer PRIMARY KEY AUTOINCREMENT,
+    coach_id INT,
+    team_id INT,
+        FOREIGN KEY (coach_id) REFERENCES Coach(id)
+        FOREIGN KEY (team_id) REFERENCES Team(id)
+);
+
+CREATE TABLE Player(
+    id integer PRIMARY KEY AUTOINCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT,
+    team_id INT,
+        FOREIGN KEY (team_id) REFERENCES Team(id)
+);
+
+CREATE TABLE Parent(
+    id integer PRIMARY KEY AUTOINCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+
+CREATE TABLE Coach(
+    id integer PRIMARY KEY AUTOINCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+CREATE TABLE Age_Group(
+    id integer PRIMARY KEY AUTOINCREMENT
+);
