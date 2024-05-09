@@ -1,0 +1,26 @@
+INSERT INTO Player (first_name, last_name, date_of_birth, address_id ) VALUES ('Thomas', 'Crabtree', '01/01/1997', 3 );
+
+INSERT INTO Team(team_name) VALUES ('Alpha');
+
+INSERT INTO Age_Group(id) VALUES (3);
+
+INSERT INTO Coach(first_name, last_name) VALUES ('Andy', 'Brown');
+INSERT INTO Coach(first_name, last_name) VALUES ('Chris', 'Davids')
+
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Archie', 'Black', 7, 1)
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Conor', 'Daniels', 7, 1)
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Ed', 'Fox', 7, 1)
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Gareth', 'Hobbs', 8, 2)
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Ian', 'Jack', 8, 2)
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Kevin', 'Lamb', 8, 2)
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Mark', 'Nock', 9, 3)
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Owen', 'Park', 9, 3)
+INSERT INTO Player(first_name, last_name, age, team_id) VALUES ('Quentin', 'Russel', 9, 3)
+
+INSERT INTO Parent(first_name, last_name) VALUES ('Anna', 'Black')
+
+INSERT INTO Player-Parent(player_id, parent_id) VALUES ();
+INSERT INTO Player_Parent(player_id, parent_id) VALUES (1 ,1);
+
+INSERT INTO Coach_Team(coach_id, team_id) VALUES ();
+INSERT INTO Coach_Team(coach_id, team_id) VALUES (2,3)
