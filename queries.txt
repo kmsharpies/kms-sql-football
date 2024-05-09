@@ -1,0 +1,6 @@
+select team_name
+from Team
+join Player
+on Team.id = Player.team_id
+
+#returns the player id with their team name
